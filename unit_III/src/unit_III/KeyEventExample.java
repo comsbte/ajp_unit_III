@@ -36,10 +36,11 @@ public class KeyEventExample implements KeyListener{
 	@Override
 	public void keyPressed(KeyEvent e) {
 		System.out.println("keyPressed");
+		JTextField jtf = (JTextField) e.getSource();
 		System.out.println(e.getKeyChar());
 		System.out.println(e.getKeyCode());
 		if(e.getKeyCode()==KeyEvent.VK_BACK_SPACE) {
-			
+			jtf.setText("");
 		}
 	}
 
