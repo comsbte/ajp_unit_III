@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 
 public class KeyEventExample implements KeyListener{
 	public static void main(String[] args) {
-		JFrame jf = new JFrame("Prevent Copy paste and backspace");
+		JFrame jf = new JFrame("Key Listener");
 		jf.setLayout(new FlowLayout());
 		
 		JTextField jpf = new JTextField(20);
