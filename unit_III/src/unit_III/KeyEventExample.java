@@ -5,18 +5,18 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
-import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class KeyEventExample implements KeyListener{
+	
 	public static void main(String[] args) {
 		JFrame jf = new JFrame("Key Listener");
 		jf.setLayout(new FlowLayout());
 		
-		JTextField jpf = new JTextField(20);
-		jf.add(jpf);
+		JTextField jtf = new JTextField(20);
+		jf.add(jtf);
 		
-		jpf.addKeyListener(new KeyEventExample());
+		jtf.addKeyListener(new KeyEventExample());
 		
 		jf.setVisible(true);
 		jf.setSize(700, 700);
